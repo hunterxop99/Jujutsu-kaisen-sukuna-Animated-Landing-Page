@@ -3,52 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hire - Shreeram Codez</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Hire Me - Shreeram Codez</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <video autoplay loop muted>
-        <source src="BG BY CWS.mp4">
-    </video>
 
-    <nav class="navbar">
+    <div class="navbar">
         <div class="container">
-            <a href="index.html" class="logo">Shreeram Codez</a>
+            <a href="#" class="logo">SHREERAM CODEZ</a>
         </div>
-    </nav>
+    </div>
 
-    <main class="container">
-        <div class="hire-container">
-            <h1 class="hire-heading">Hire Me</h1>
-            <p class="hire-text">Fill in your details, and let's get started on something amazing!</p>
-
-            <form id="hireForm" class="contact-form">
-                <input type="text" id="name" class="input-field" placeholder="Your Name" required>
-                <input type="email" id="email" class="input-field" placeholder="Your Email" required>
-                <textarea id="message" class="input-field textarea" placeholder="Your Message" required></textarea>
-                <button type="submit" class="hire-btn">Hire Now</button>
-            </form>
-        </div>
-    </main>
+    <div class="hire-container">
+        <h2>HIRE ME</h2>
+        <p>Fill in your details, and let's get started on something amazing!</p>
+        <form class="hire-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button class="hire-btn" onclick="redirectToTelegram()">Hire Now</button>
+            <button class="hire-btn-alt" onclick="redirectToTelegram()">Hire Me Instead 😆</button>
+        </form>
+    </div>
 
     <script>
-        document.getElementById('hireForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent default form submission
-
-            // Get form values
-            let name = document.getElementById('name').value;
-            let email = document.getElementById('email').value;
-            let message = document.getElementById('message').value;
-
-            // Format the message
-            let telegramMessage = `🔥 **New Hire Request** 🔥\n\n👤 **Name:** ${name}\n📧 **Email:** ${email}\n📝 **Message:** ${message}\n\n🚀 Let's work together!`;
-
-            // Encode for URL
-            let encodedMessage = encodeURIComponent(telegramMessage);
-
-            // Redirect to Telegram with pre-filled message
-            window.location.href = `https://t.me/shreeram_shinde_18?text=${encodedMessage}`;
-        });
+        function redirectToTelegram() {
+            window.location.href = "https://t.me/shreeram_shinde_18";
+        }
     </script>
+
 </body>
 </html>
