@@ -54,7 +54,6 @@ video {
     margin: auto;
 }
 
-/* Home Page */
 .page-content {
     text-align: center;
     margin-top: 10rem;
@@ -69,6 +68,18 @@ video {
 .page-content .inner-content p {
     font-family: 'Poppins', sans-serif;
     font-size: 2vw;
+}
+
+@media (max-width: 768px) {
+    video {
+        height: 100vh;
+    }
+    .page-content .inner-content .heading {
+        font-size: 12vw;
+    }
+    .page-content .inner-content p {
+        font-size: 3vw;
+    }
 }
 
 .page-content .buttons {
@@ -102,7 +113,6 @@ video {
     box-shadow: 0 0 40px rgb(253, 2, 2);
 }
 
-/* Social Links */
 .page-content .social-links {
     margin-top: 6rem;
     display: flex;
@@ -140,7 +150,6 @@ video {
 .page-content .social-links a:hover::after {
     height: 100%;
 }
-
 /* Browse Projects Page */
 .browse-container {
     text-align: center;
