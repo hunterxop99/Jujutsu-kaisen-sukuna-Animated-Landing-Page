@@ -11,8 +11,13 @@
     color: #fff;
 }
 
+body {
+    background: url('fallback-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
 video {
-    position: absolute; /* Changed fixed to absolute */
+    position: fixed;
     left: 0;
     top: 0;
     height: 100%;
@@ -67,11 +72,7 @@ video {
 
 @media (max-width: 768px) {
     video {
-        display: none; /* Hide video on mobile */
-    }
-    body {
-        background: url('your-fallback-image.jpg') no-repeat center center fixed;
-        background-size: cover;
+        height: 100vh;
     }
     .page-content .inner-content .heading {
         font-size: 12vw;
@@ -128,8 +129,8 @@ video {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    backdrop-filter: blur(160px);
-    background: #c624f71e;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.3);
     overflow: hidden;
     position: relative;
     z-index: 1;
