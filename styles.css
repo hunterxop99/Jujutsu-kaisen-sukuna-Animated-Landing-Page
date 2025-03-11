@@ -12,7 +12,7 @@
 }
 
 video {
-    position: fixed;
+    position: absolute; /* Changed fixed to absolute */
     left: 0;
     top: 0;
     height: 100%;
@@ -67,7 +67,11 @@ video {
 
 @media (max-width: 768px) {
     video {
-        height: 100vh;
+        display: none; /* Hide video on mobile */
+    }
+    body {
+        background: url('your-fallback-image.jpg') no-repeat center center fixed;
+        background-size: cover;
     }
     .page-content .inner-content .heading {
         font-size: 12vw;
