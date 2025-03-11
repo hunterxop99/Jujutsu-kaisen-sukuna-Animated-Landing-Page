@@ -167,34 +167,15 @@ video {
     border-radius: 6px;
     font-size: 16px;
     text-align: center;
-    background-color: #ff8800; /* Bright Orange */
+    background-color: orange;
     color: white;
     font-weight: bold;
     border: none;
     cursor: pointer;
-    position: relative;
-    overflow: hidden;
-}
-
-.browse-btn::after {
-    content: "👀 (Nothing here yet...)";
-    font-size: 14px;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: 0.3s;
-    white-space: nowrap;
-}
-
-.browse-btn:hover::after {
-    top: 110%;
-    opacity: 1;
 }
 
 .browse-btn:hover {
-    box-shadow: 0 0 40px #ff8800;
+    box-shadow: 0 0 40px orange;
 }
 
 /* Hire Page */
