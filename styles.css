@@ -54,6 +54,7 @@ video {
     margin: auto;
 }
 
+/* Home Page */
 .page-content {
     text-align: center;
     margin-top: 10rem;
@@ -68,18 +69,6 @@ video {
 .page-content .inner-content p {
     font-family: 'Poppins', sans-serif;
     font-size: 2vw;
-}
-
-@media (max-width: 768px) {
-    video {
-        height: 100vh;
-    }
-    .page-content .inner-content .heading {
-        font-size: 12vw;
-    }
-    .page-content .inner-content p {
-        font-size: 3vw;
-    }
 }
 
 .page-content .buttons {
@@ -113,6 +102,7 @@ video {
     box-shadow: 0 0 40px rgb(253, 2, 2);
 }
 
+/* Social Links */
 .page-content .social-links {
     margin-top: 6rem;
     display: flex;
@@ -151,11 +141,50 @@ video {
     height: 100%;
 }
 
-/* Hire Page Styling */
+/* Browse Projects Page */
+.browse-container {
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.browse-heading {
+    font-size: 3rem;
+    font-family: 'sd-asian';
+}
+
+.browse-text {
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0;
+}
+
+.browse-btn {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    text-align: center;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.browse-btn:hover {
+    box-shadow: 0 0 40px orange;
+}
+
+/* Hire Page */
 .hire-container {
     text-align: center;
-    margin-top: 5rem;
-    padding: 0 20px;
+    margin-top: 8rem;
+    padding: 20px;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
 }
 
 .hire-heading {
@@ -164,50 +193,27 @@ video {
 }
 
 .hire-text {
-    font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
-    max-width: 600px;
-    margin: auto;
-    margin-top: 10px;
-}
-
-.contact-form {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.input-field {
-    width: 100%;
-    max-width: 400px;
-    padding: 12px;
-    margin: 8px 0;
-    border-radius: 6px;
-    border: 1px solid #ffffff1e;
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.1);
     font-family: 'Poppins', sans-serif;
-}
-
-.textarea {
-    height: 100px;
-    resize: none;
+    margin: 10px 0;
 }
 
 .hire-btn {
-    margin-top: 10px;
-    padding: 12px 18px;
-    background-color: #e1340d;
-    border: none;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 12px 20px;
     border-radius: 6px;
     font-size: 16px;
+    text-align: center;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    border: none;
     cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-    transition: 0.3s;
 }
 
 .hire-btn:hover {
-    background-color: #f15405;
-    box-shadow: 0 0 20px rgba(241, 84, 5, 0.8);
+    box-shadow: 0 0 40px orange;
 }
